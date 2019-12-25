@@ -1,0 +1,323 @@
+a, h2, h3, h4, h5, div, p, span, button{
+    font-family: Montserrat, sans-serif;
+}
+b{
+    font-weight: 900;
+    color: #000
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: rgba($color: #000000, $alpha: 0.6);
+    
+}
+h3{
+    font-size: 50px;
+    font-weight: 900;
+}
+a, .navbar-nav li, .show, .navSkrol, .navbar, button, .icon-money{
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+         transition: all 0.3s ease;
+         
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    &:hover{
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+         -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+             transition: all 0.3s ease;
+
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+	}
+}
+
+.mr-left{
+    margin-left: auto;
+}
+
+
+/* header */
+
+
+
+.dropdown{
+	&:hover .dropdown-menu{
+		display: block;
+	}
+}
+.navbar-nav li{
+    font-weight: 900;
+    font-size: 14px;
+
+    a{
+        color: #fff;
+    }
+    &:hover a{
+        color: #ff1135;
+	}
+}
+.navbar-toggler{
+    border: 1px solid;
+}
+
+.navbar{
+    height: 140px;
+    padding: 0 10%;
+
+    @include md(){
+        padding: 0;
+        background: rgba($color: #000000, $alpha: 0.9);
+        .show{
+            background: rgba($color: #000000, $alpha: 0.7);
+            margin-top: 30px;
+        }
+        .d-inline-block{
+            margin-left: 15px;
+        }
+        button{
+            margin-right: 15px;
+            width: 56px;
+            height: 40px;
+            line-height: 5px;
+            color: #333;
+        }
+        .navbar-nav{
+            text-align: center;
+            .dropdown-item{
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+.navSkrol{
+    background: rgba($color: #000000, $alpha: 0.9);
+    height: 110px;
+}
+
+/* header */
+
+/* footer */
+
+footer{
+    background: #252525;
+    h5{
+        color: #c5c5c5;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 0;
+        padding-bottom: 24px;
+    }
+    a{
+        color: #767676;
+        
+    }
+    .footer-copyright{
+        background: #1c1c1c;
+        color: #666666;
+        font-size: 18px;
+        text-align: left;
+        padding-left: 10%;
+        a{
+            background: #1c1c1c;
+        color: #666666;
+        font-size: 18px;
+        text-align: left;
+        }
+    }
+    .footer-conteiner{
+        padding: 31px 10% 14px;
+    }
+    li{
+        padding: 5px 0;
+        font-size: 18px;
+    }
+}
+
+
+/* footer */
+
+
+/* home */
+.hero{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 695px;
+    .hero-txt{
+      margin: 0 auto;
+    }
+    .hero-hr{
+        background: #ff1135;
+        width: 225px;
+
+    }
+    h3{
+        font-size: 57px;
+    line-height: 33px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    h4{
+        font-size: 30px;
+    line-height: 36px;
+    padding: 0px 0 50px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .btn-hero{
+        border: 1px solid #ff1135;
+        background: #ff1135;
+        color: #fff;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 900;
+        padding: 12px 32px;
+        border-radius: 0;
+        &:hover{
+            background: transparent;
+            color: #ff1135;
+        }
+        
+    }
+}
+
+.hero-bg{
+    background-image: url(../img/hero-bg.jpg);
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.about{
+    padding: 140px 0 10px;
+    h3{
+        font-size: 38px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 400;
+        color: rgba($color: #000000, $alpha: 0.6);
+        font-size: 21px;
+        line-height: 28px;
+        
+    }
+    .txt{
+        max-width: 530px;
+        padding: 0px 0px 0px 80px;
+    }
+}
+
+.tourney{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 125px;
+    .bold{
+        margin-bottom: 20px;
+        color: #ff1135;
+        font-size: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .hero-tor{
+        background: #ff1135;
+        height: 4px;
+        width: 80%;
+        margin-right: 100%;
+        margin-bottom: 20px;
+    }
+    .img-tor{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.request{
+    max-width: 1140px;
+    padding: 135px 15% 100px 15%;
+    margin: 0 auto;
+    p, h3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .btn-request{
+        background-color: #003659;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 14px 48px;
+        border-radius: 5px;
+        color: #fff;
+    }
+}
+.qwes{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px 100px;
+    h4{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .qwes-title{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .hr-qwes{
+        background: #ff1135;
+    }
+    .block-qwes{
+        padding-top: 55px;
+    }
+}
+.money{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px 100px;
+    .money-block{
+        padding-top: 60px;
+    }
+    .title-money{
+        width: 100%;
+        text-align: center;
+    }
+    h4{
+        font-size: 25px;
+        font-weight: 900;
+        margin: 10px 0 24px;
+    }
+    .icon-money{
+        margin-right: 30px;
+        &:hover{
+            transform: scale(1.1);
+            
+        }
+        i{
+            width: 1em;
+            height: 1em;
+            color: #bfbfbf;
+            font-size: 55px;
+        }
+        
+    }
+}
+/* home */
